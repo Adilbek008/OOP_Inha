@@ -61,48 +61,32 @@ class Wizard:
         self.wand = wand
         self.status = status
     
-    def introduce(self):
+    def describe(self):
         return f"Name: {self.name}, House: {self.house}, Wand: {self.wand}, Status: {self.status}"
     
 ##################################################################################################
 
 ######## Problem 11: Game of Thrones #############################################################
-class House:
-    def __init__(self, name, sigil, words, region):
-        self.name = name
-        self.sigil = sigil
-        self.words = words
-        self.region = region
-        
-    def describe(self):
-        return f"House: {self.name}, Sigil: {self.sigil}, Words: {self.words}, Region: {self.region}"
-    
-class Character_GoT:
-    def __init__(self, name, title, house, status):
-        self.name = name
-        self.title = title
-        self.house = house
-        self.status = status
-        
-    def introduce(self):
-        return f"Name: {self.name}, Title: {self.title}, House: {self.house.name}, Status: {self.status}"
-    
+
 ##################################################################################################
 
 ######## Problem 12: Star Wars ###################################################################
-class Jedi:
-    def __init__(self, name, rank, lightsaber_color, status):
-        self.name = name
-        self.rank = rank
-        self.lightsaber_color = lightsaber_color
-        self.status = status
-    
-    def introduce(self):
-        return f"Name: {self.name}, Rank: {self.rank}, Lightsaber Color: {self.lightsaber_color}, Status: {self.status}"
-    
+
 ##################################################################################################
 
 ######## Problem 13: The Lord of the Rings #######################################################
+class Lord:
+    def __init__(self, race, name, homeland, characteristics, occupation, status):
+        self.race = race
+        self.name = name
+        self.homeland = homeland
+        self.characteristics = characteristics
+        self.occupation = occupation
+        self.status = status
+    def describe(self):
+        return (f"Race: {self.race}, Homeland: {self.homeland}, Characteristics: {self.characteristics}\n"
+                f"Name: {self.name}, Occupation: {self.occupation}, Status: {self.status}")
+
 
 ##################################################################################################
 
@@ -115,6 +99,7 @@ class Jedi:
 ##################################################################################################
 
 ######## Problem 16: Naruto ######################################################################
+
 
 ##################################################################################################
 
