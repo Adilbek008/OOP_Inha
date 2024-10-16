@@ -103,32 +103,54 @@ class Jedi:
 ##################################################################################################
 
 ######## Problem 13: The Lord of the Rings #######################################################
+class Race:
+    def __init__(self, race, name, homeland, characteristics):
+        self.race = race
+        self.name = name
+        self.homeland = homeland
+        self.characteristics = characteristics
+    def describe(self):
+        return (f"Race: {self.race}, Homeland: {self.homeland}, Characteristics: {self.characteristics}")          
+class Character_LoTR:
+    def __init__(self, name, race, occupation, status):
+        self.name = name
+        self.race = race
+        self.occupation = occupation
+        self.status = status
+    def describe(self):
+        return(f"Name{self.name}, Race{self.race}, Occupation{self.occupation}, Status{self.status}")   
+        
 
 ##################################################################################################
 
 ######## Problem 14: Marvel Superheroes ##########################################################
+class Superhero:
+    def __init__(self, name, alias, superpower, affiliation):
+        self.name = name
+        self.alias = alias
+        self.superpower = superpower
+        self.affiliation = affiliation
+
+    def describe(self):
+        return (f"Name {self.name}, Alias{self.alias}, Superpower{self.superpower}, Affiliation{self.affiliation}")        
 
 ##################################################################################################
 
 ######## Problem 15: Pirates of the Caribbean ####################################################
+class Pirate:
+        def __init__(self, name, ship, rank, status):
+            self.name = name
+            self.ship = ship
+            self.rank = rank
+            self.status = status
+            
+        def describe(self):   
+            return(f"Name {self.name}, Ship{self.ship}, Rank{self.rank}, Status{self.status}")
 
 ##################################################################################################
 
 ######## Problem 16: Naruto ######################################################################
-class Shinobi:
-    def __init__(self, name, rank, chakra, missions_completed):
-        self.name = name
-        self.rank = rank
-        self.chakra = chakra
-        self.missions_completed = missions_completed
-        
-    def complete_mission(self, chakra_used):
-        self.chakra -= chakra_used
-        self.missions_completed += 1
 
-    def recover_chakra(self, amount):
-        self.chakra += amount
-        
 ##################################################################################################
 
 ######## Problem 17: Doctor Who ##################################################################
